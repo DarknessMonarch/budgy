@@ -4,19 +4,13 @@ export default function robots() {
       {
         userAgent: '*',
         allow: [
+          '/',
           '/page/about',
           '/page/terms',
           '/page/contact',
-          '/page/banker',
-          '/page/basketball',
-          '/page/straight',
-          '/page/winning',
-          '/page/dashboard',
-          '/page/vip',
           '/sitemap.xml', 
         ],
         disallow: [
-          '/',  
           '/authentication/*',
           '/api/*',
           '/page/payment/*',
@@ -29,14 +23,12 @@ export default function robots() {
       },
       {
         userAgent: 'GPTBot',
-        disallow: ['/']
       },
       {
         userAgent: 'CCBot',
-        disallow: ['/']
       }
     ],
-    sitemap: 'https://budgy.com/sitemap.xml',
-    host: 'https://budgy.com'
+    sitemap: 'https://budgyapp.vercel.app/sitemap.xml',
+    host: 'https://budgyapp.vercel.app/'
   }
 }

@@ -10,7 +10,7 @@ const openSans = Open_Sans({
 
 
 
-const SITE_URL = "https://budgy.com";
+const SITE_URL = "https://budgyapp.vercel.app/";
 const BANNER_URL = "https://raw.githubusercontent.com/DarknessMonarch/budgy/refs/heads/master/public/assets/banner.png";
 
 export const viewport = {
