@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { toast } from "sonner";
 import { useRouter } from 'next/navigation';
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/Navbar";
@@ -12,10 +13,9 @@ import { FaArrowRight as ArrowIcon } from "react-icons/fa6";
 export default function App() {
   const router = useRouter();
 
-  const login = () => {
-    router.push("/login");
+  const login = async () => {
+    toast.success("under construction");
   };
-
 
   return (
     <div className={styles.appContainer}>
@@ -26,7 +26,7 @@ export default function App() {
           budget Management system</h1>
         <p>Achieve your financial goal with us for yourself or your organization</p>
         <button className={styles.appButton} onClick={login}>
-        Get started today
+          Get started today
           <ArrowIcon
             alt="arrow icon"
             aria-label="arrow icon"
